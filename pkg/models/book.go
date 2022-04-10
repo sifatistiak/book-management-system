@@ -1,14 +1,14 @@
 package models
 
 import (
-	"book-management-system/pkg/config"
 	"github.com/jinzhu/gorm"
+	"github.com/sifatistiak/book-management-system/pkg/config"
 )
 
 var db *gorm.DB
 
 type Book struct {
-	gorm.model
+	gorm.Model
 	Name        string `gorm:""json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
@@ -20,7 +20,7 @@ func init() {
 	db.AutoMigrate(&Book{})
 }
 
-func (b *Book) createBook() *Book {
+func (b *Book) CreateBook() *Book {
 	db.NewRecord(b)
 	db.Create(&b)
 	return b

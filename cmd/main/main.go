@@ -1,9 +1,9 @@
 package main
 
 import (
-	"book-management-system/pkg/routes"
 	"github.com/gorilla/mux"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/sifatistiak/book-management-system/pkg/routes"
 	"log"
 	"net/http"
 )

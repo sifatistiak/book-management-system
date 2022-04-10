@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"book-management-system/pkg/models"
-	"book-management-system/pkg/utils"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
+	"github.com/sifatistiak/book-management-system/pkg/models"
+	"github.com/sifatistiak/book-management-system/pkg/utils"
 	"net/http"
 	"strconv"
 )
